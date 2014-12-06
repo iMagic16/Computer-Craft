@@ -16,10 +16,10 @@ print()
 print()
 
 local reactor = peripheral.wrap("BigReactors-Reactor_1")
-print("Wrapped reactor...")
+print("Connected to the reactor...")
 
 local monitor = peripheral.wrap("monitor_1")
-print("Wrapped monitor...")
+print("Connected to the monitor...")
 
 --monitor init stuff
 monitor.clear()

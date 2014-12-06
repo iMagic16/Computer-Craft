@@ -12,26 +12,30 @@ print()
 
 
 local reactor = peripheral.wrap("BigReactors-Reactor_1")
-print("Wrapped reactor...")
+print("Connected to the reactor...")
 
-print("type start to start reactor, stop to stop reactor and quit to exit")
-
+print()
+print("Type 'start' to start reactor, 'stop' to stop reactor and 'quit' to exit")
+print()
 
 while true  do
 
 input = io.read()
 
 if input == "stop" then
-
+print()
+print("Stopping reactor...")
 reactor.setActive(false)
-print("stopping reactor")
-print(reactor.getActive())
+print("Reactor stopped")
+print()
 
 elseif input == "start" then
-
+print()
+print("Starting reactor...")
 reactor.setActive(true)
-print("starting reactor")
-print(reactor.getActive())
+print("Reactor started")
+print()
+
 
 elseif input == "quit" then
 
